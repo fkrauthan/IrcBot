@@ -19,7 +19,7 @@ set (SOURCE_FILES
 
 
 #Find dependencys
-find_package(Boost COMPONENTS program_options thread REQUIRED)
+find_package(Boost COMPONENTS system program_options thread REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 
 
