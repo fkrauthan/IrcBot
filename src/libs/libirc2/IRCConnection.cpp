@@ -11,6 +11,7 @@
 
 #include <boost/algorithm/string.hpp>
 #include <cstring>
+#include <iostream>
 
 #ifndef WIN32
     #include <sys/socket.h>

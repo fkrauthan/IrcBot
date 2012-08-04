@@ -72,7 +72,7 @@ void AI::cleanUpReJoinList() {
 	std::map<std::string, std::time_t>::iterator iter;
 	for(iter=mReJoinList.begin(); iter!=mReJoinList.end();) {
 		if(iter->second+mMaxReJoinTime < currentTime) {
-			iter = mReJoinList.erase(iter);
+			mReJoinList.erase(iter++);
 		}
 		else {
 			++iter;
